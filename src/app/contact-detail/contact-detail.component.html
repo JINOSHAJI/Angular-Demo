@@ -1,0 +1,8 @@
+<div *ngIf="contact">
+  <h2>Contact Detail of {{contact.name}}</h2>
+  <div>
+    <p>Id: {{contact.id}}</p>
+    <p>Name: <input type="text" [(ngModel)]=contact.name/></p>
+    <p>Phone: <input type="text" [(ngModel)]=contact.phone/></p>
+  </div>
+</div>

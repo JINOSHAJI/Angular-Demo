@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+
+<div>
+  <ul class="heroes">
+    <li *ngFor="let contact of contacts"
+    [class.selected]="contact==selectedContact"
+    >
+    <a routerLink='/contactDetail/{{contact.id}}' > <span class="badge">{{contact.id}}</span>{{contact.name}}
+    </a>
+    </li>
+  </ul>
+</div>
+<!-- 
+<app-contact-detail [contact]=selectedContact></app-contact-detail> -->
